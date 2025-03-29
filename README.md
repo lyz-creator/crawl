@@ -32,4 +32,4 @@ python crawler/S&P2024.py
 本项目仅用于学术研究目的，请遵守目标网站的robots.txt协议和使用条款。过度请求可能导致IP被封禁，使用者需自行承担风险。
 
 ## 许可证
-[MIT License](LICENSE) © lyz-creator
+[MIT License](https://opensource.org/license/mit) © lyz-creator
