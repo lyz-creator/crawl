@@ -15,3 +15,21 @@ python crawler/Security2024.py
 pip install selenium webdriver-manager requests
 python crawler/S&P2024.py
 ```
+
+## 技术细节
+
+### 静态网页爬虫特点
+- 基于Requests+BeautifulSoup
+- 支持多级页面跳转  
+- 自动文件名清理
+
+### 动态网页爬虫特点  
+- 基于Selenium WebDriver
+- 自动处理Cookie和弹窗
+- 支持AJAX内容加载
+
+## 免责声明
+本项目仅用于学术研究目的，请遵守目标网站的robots.txt协议和使用条款。过度请求可能导致IP被封禁，使用者需自行承担风险。
+
+## 许可证
+[MIT License](LICENSE) © lyz-creator
