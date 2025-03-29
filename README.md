@@ -1,14 +1,17 @@
 # Crawl - 学术论文爬虫工具
 
-![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)
+![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-Crawl 是一个用于爬取学术会议论文的Python工具集，包含静态网页和动态网页两种爬取方案。
+Crawl 是一个用于爬取学术会议论文的Python代码示例，包含静态网页和动态网页两种爬取方案。
 
-## 功能特性
-
-- 🌐 双模式支持：提供静态网页和动态网页两种爬取方案
-- 📑 PDF下载：自动识别并下载论文PDF文件
-- 🛡️ 反爬处理：内置随机延迟和请求头管理
-- 📂 文件管理：自动清理文件名并分类保存
-- 🚦 自动化流程：一键式运行，自动处理异常
+## 静态网页爬虫 - USENIX Security 2024 示例
+```bash
+pip install requests beautifulsoup4
+python crawler/Security2024.py
+```
+## 动态网页爬虫 - IEEE S&P 2024 示例
+```bash
+pip install selenium webdriver-manager requests
+python crawler/S&P2024.py
+```
