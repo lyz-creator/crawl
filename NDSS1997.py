@@ -2,6 +2,13 @@ import os
 import requests
 from bs4 import BeautifulSoup
 import re
+import time
+import random
+
+# 清理文件名，使其合法
+def sanitize_filename(title):
+    """清理文件名，使其合法"""
+    return re.sub(r'[<>:"/\\|?*]', '_', title)
 
 # 目标网页 URL
 url = "https://www.ndss-symposium.org/ndss1997/accepted-papers/"
@@ -67,8 +74,9 @@ try:
                     # 下载 PDF 文件
                     pdf_response = requests.get(pdf_url)
                     if pdf_response.status_code == 200:
-                        # 使用论文标题作为文件名，确保路径安全
-                        pdf_path = os.path.join(download_folder, f"{title}.pdf")
+                        # 使用 sanitize_filename 确保文件名合法
+                        sanitized_title = sanitize_filename(title)
+                        pdf_path = os.path.join(download_folder, f"{sanitized_title}.pdf")
                         
                         # 保存 PDF 文件
                         with open(pdf_path, 'wb') as f:
@@ -78,6 +86,9 @@ try:
                         print(f"PDF 下载失败: {pdf_url}")
                 else:
                     print(f"未能找到 PDF 链接：{paper_url}")
+                
+                # 随机延迟 1 到 3 秒
+                time.sleep(random.randint(1, 3))
             else:
                 print(f"在链接 '{href}' 中未能提取到标题。")
         else:
