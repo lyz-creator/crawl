@@ -11,11 +11,15 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 # 设置 Selenium 使用 Chrome 浏览器
-options = webdriver.ChromeOptions()
-options.headless = True  # 不打开浏览器窗口
+chrome_options = webdriver.ChromeOptions()
+chrome_options.add_argument("--headless")  # 让浏览器在无头模式下运行
 
-# 创建 WebDriver 实例
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+# 设置自定义的 User-Agent
+user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+chrome_options.add_argument(f"user-agent={user_agent}")
+
+# 启动 Chrome 浏览器，webdriver-manager 会自动管理 ChromeDriver
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
 
 # 目标网页 URL
 url = "https://www.computer.org/csdl/proceedings/sp/2024/1RjE8VKKk1y"  # 替换为你自己的 URL
