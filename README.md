@@ -19,7 +19,7 @@ python crawler/Security2024.py
 - 自动处理Cookie和弹窗
 - 支持AJAX内容加载
 ```bash
-pip install selenium webdriver-manager requests
+pip install selenium undetected-chromedriver requests
 python crawler/S&P2024.py
 ```
 
