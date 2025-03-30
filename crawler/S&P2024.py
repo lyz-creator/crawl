@@ -39,7 +39,7 @@ try:
 
     # 尝试找到并点击“接受”按钮
     try:
-        accept_button = WebDriverWait(driver, 10).until(
+        accept_button = WebDriverWait(driver, 3).until(
             EC.element_to_be_clickable((By.CLASS_NAME, "osano-cm-accept"))
         )
         accept_button.click()  # 点击“接受”按钮
@@ -53,7 +53,7 @@ try:
 
     # 尝试找到并点击“Load All”按钮
     try:
-        load_all_button = WebDriverWait(driver, 10).until(
+        load_all_button = WebDriverWait(driver, 5).until(
             EC.element_to_be_clickable((By.CSS_SELECTOR, "a.dark-link.pointer"))
         )
         load_all_button.click()  # 点击“Load All”按钮
