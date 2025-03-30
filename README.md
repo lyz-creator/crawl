@@ -9,7 +9,6 @@ Crawl 是一个用于爬取学术会议论文的Python代码示例，包含静�
 
 ## 静态网页爬虫 - USENIX Security 2024 示例
 - 基于Requests+BeautifulSoup
-- 支持多级页面跳转  
 - 自动文件名清理
 ```bash
 pip install requests beautifulsoup4
@@ -21,7 +20,6 @@ python crawler/Security2024.py
 
 ## 动态网页爬虫 - IEEE S&P 2024 示例
 - 基于Selenium WebDriver
-- 自动处理Cookie和弹窗
 - 支持AJAX内容加载
 ```bash
 pip install selenium undetected-chromedriver requests
