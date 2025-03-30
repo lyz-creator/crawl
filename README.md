@@ -5,7 +5,7 @@
 
 Crawl 是一个用于爬取学术会议论文的Python代码示例，包含静态网页和动态网页两种爬取方案。
 
-** NDSS和USENIX Security所有论文见：https://huggingface.co/datasets/lyz1010/paper **
+**NDSS和USENIX Security所有论文见：https://huggingface.co/datasets/lyz1010/paper**
 
 ## 静态网页爬虫 - USENIX Security 2024 示例
 - 基于Requests+BeautifulSoup
