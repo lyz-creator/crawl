@@ -3,23 +3,19 @@ import requests
 import time
 import random
 import re
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
+import undetected_chromedriver as uc
 from selenium.webdriver.common.by import By
-from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-# 设置 Selenium 使用 Chrome 浏览器
-chrome_options = webdriver.ChromeOptions()
+# 使用 undetected-chromedriver
+chrome_options = uc.ChromeOptions()
 chrome_options.add_argument("--headless")  # 让浏览器在无头模式下运行
+chrome_options.add_argument("--no-sandbox")
+chrome_options.add_argument("--disable-dev-shm-usage")
 
-# 设置自定义的 User-Agent
-user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
-chrome_options.add_argument(f"user-agent={user_agent}")
-
-# 启动 Chrome 浏览器，webdriver-manager 会自动管理 ChromeDriver
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+# 启动 undetected Chrome
+driver = uc.Chrome(options=chrome_options, use_subprocess=True)
 
 # 目标网页 URL
 url = "https://www.computer.org/csdl/proceedings/sp/2024/1RjE8VKKk1y"  # 替换为你自己的 URL
@@ -51,13 +47,18 @@ try:
     except Exception:
         print("未找到'接受'按钮，跳过此步骤")
 
-    # 等待页面更新，可能是加载更多内容后，点击“Load All”按钮
+    # 滚动页面到底部，确保“Load All”按钮加载
+    driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+    time.sleep(3)
+
+    # 尝试找到并点击“Load All”按钮
     try:
         load_all_button = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.CLASS_NAME, "dark-link.pointer"))
+            EC.element_to_be_clickable((By.CSS_SELECTOR, "a.dark-link.pointer"))
         )
         load_all_button.click()  # 点击“Load All”按钮
         print("点击了'Load All'按钮")
+        time.sleep(3)
     except Exception:
         print("未找到'Load All'按钮，跳过此步骤")
 
