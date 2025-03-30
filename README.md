@@ -13,6 +13,9 @@ Crawl 是一个用于爬取学术会议论文的Python代码示例，包含静�
 pip install requests beautifulsoup4
 python crawler/Security2024.py
 ```
+#### 输出示例
+![image](https://github.com/user-attachments/assets/4ccd18f7-af8d-4fc5-85f9-f62dd915f4f0)
+
 
 ## 动态网页爬虫 - IEEE S&P 2024 示例
 - 基于Selenium WebDriver
