@@ -23,6 +23,9 @@ if not os.path.exists(download_folder):
 # 发送 HTTP 请求获取网页内容
 response = requests.get(url)
 
+# 初始化找到的 PDF 总数
+total_pdf_found = 0
+
 # 检查请求是否成功
 if response.status_code == 200:
     # 解析 HTML 内容
@@ -31,7 +34,18 @@ if response.status_code == 200:
     # 找到所有包含多个 <span class="usenix-schedule-media pdf"> 的 <div> 标签
     divs = soup.find_all('div', class_='required-fields group-available-media field-group-html-element')
     
+    # 遍历找到所有 PDF 链接
     for div in divs:
+        # 找到第一个 <span class="usenix-schedule-media pdf"> 标签
+        span = div.find('span', class_='usenix-schedule-media pdf')
+        if span and span.a and span.a.get('href'):
+            total_pdf_found += 1  # 增加找到的 PDF 总数
+    
+    # 输出找到的 PDF 总数
+    print(f"一共找到 {total_pdf_found} 篇 PDF。")
+    
+    # 再次遍历下载 PDF
+    for index, div in enumerate(divs, start=1):
         # 找到第一个 <span class="usenix-schedule-media pdf"> 标签
         span = div.find('span', class_='usenix-schedule-media pdf')
         if span and span.a and span.a.get('href'):
@@ -73,21 +87,21 @@ if response.status_code == 200:
                                 # 保存 PDF 文件
                                 with open(pdf_path, 'wb') as f:
                                     f.write(pdf_response.content)
-                                print(f"已保存 PDF：{pdf_path}")
+                                print(f"{index}. 已保存 PDF：{pdf_path}")
                             else:
-                                print(f"无法下载 PDF: {pdf_link}")
+                                print(f"{index}. 无法下载 PDF: {pdf_link}")
                         else:
-                            print('未找到 PDF 链接。')
+                            print(f"{index}. 未找到 PDF 链接。")
                     else:
-                        print('未找到 PDF 链接区域。')
+                        print(f"{index}. 未找到 PDF 链接区域。")
                 else:
-                    print('未找到论文标题。')
+                    print(f"{index}. 未找到论文标题。")
             else:
-                print(f'无法访问链接，状态码：{link_response.status_code}')
+                print(f"{index}. 无法访问链接，状态码：{link_response.status_code}")
         else:
-            print('未找到有效的 <span class="usenix-schedule-media pdf"> 标签或链接。')
+            print(f"{index}. 未找到有效的 <span class='usenix-schedule-media pdf'> 标签或链接。")
         
-        # 随机延迟 1 到 3 秒
-        time.sleep(random.randint(1, 3))
+        # 随机延迟 0 到 1 秒
+        time.sleep(random.randint(0, 1))
 else:
     print(f'请求主网页失败，状态码：{response.status_code}')
