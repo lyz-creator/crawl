@@ -25,6 +25,9 @@ python crawler/Security2024.py
 pip install selenium undetected-chromedriver requests
 python crawler/S&P2024.py
 ```
+#### 输出示例
+![image](https://github.com/user-attachments/assets/6d984df4-9fca-4348-a548-707069b16a72)
+
 
 ## 免责声明
 本项目仅用于学术研究目的，请遵守目标网站的robots.txt协议和使用条款。过度请求可能导致IP被封禁，使用者需自行承担风险。
