@@ -33,8 +33,8 @@ if response.status_code == 200:
     # 解析 HTML 内容
     soup = BeautifulSoup(response.text, 'html.parser')
     
-    # 找到所有包含 <div class="field-item odd"> 标签
-    divs = soup.find_all('div', class_='field-item odd')
+    # 找到所有包含 <div class="field-item odd"> 和 <div class="field-item even"> 标签
+    divs = soup.find_all('div', class_=lambda c: c in ['field-item odd', 'field-item even'])
     
     for div in divs:
         # 找到 h2 标签中的 a 标签
@@ -53,7 +53,7 @@ if response.status_code == 200:
                 print(f"URL: {paper_page_link}")
                 
                 # 随机延迟 1 到 3 秒，避免请求过快
-                time.sleep(random.randint(1, 3))
+                time.sleep(random.randint(0, 1))
                 
                 # 访问论文页面
                 paper_response = requests.get(paper_page_link, headers=headers)
@@ -108,6 +108,6 @@ if response.status_code == 200:
                     print(f"访问论文页面失败，状态码: {paper_response.status_code}")
                 
                 # 随机延迟 2 到 5 秒，避免请求过快被封
-                time.sleep(random.randint(2, 5))
+                time.sleep(random.randint(0, 1))
 else:
     print(f'请求网页失败，状态码：{response.status_code}')
