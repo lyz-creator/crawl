@@ -5,8 +5,6 @@
 
 Crawl 是一个用于爬取学术会议论文的Python代码示例，包含静态网页和动态网页两种爬取方案。
 
-**论文地址：https://huggingface.co/datasets/lyz1010/paper**
-
 ## 静态网页爬虫 - USENIX Security 2024 示例
 - 基于Requests+BeautifulSoup
 - 自动文件名清理
@@ -18,7 +16,7 @@ python crawler/Security2024.py
 ![image](https://github.com/user-attachments/assets/4ccd18f7-af8d-4fc5-85f9-f62dd915f4f0)
 
 
-## 动态网页爬虫 - IEEE S&P 2024 示例
+## 动态网页爬虫 - [IEEE S&P 2024 示例](https://github.com/lyz-creator/crawl/blob/main/crawler/S%26P2024.py)
 - 基于Selenium WebDriver
 - 支持AJAX内容加载
 ```bash
