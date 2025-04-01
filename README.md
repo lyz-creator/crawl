@@ -5,7 +5,7 @@
 
 Crawl 是一个用于爬取学术会议论文的Python代码示例，包含静态网页和动态网页两种爬取方案。
 
-## 静态网页爬虫 - USENIX Security 2024 示例
+## 静态网页爬虫 - [USENIX Security 2024 示例](https://github.com/lyz-creator/crawl/blob/main/crawler/Security2024.py)
 - 基于Requests+BeautifulSoup
 - 自动文件名清理
 ```bash
