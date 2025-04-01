@@ -1,4 +1,4 @@
-# Crawl - 学术论文爬虫工具
+# Crawl - 学术论文爬虫
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
