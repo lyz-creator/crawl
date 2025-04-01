@@ -4,7 +4,7 @@
 | <font style="color:black;">EUROCRYPT</font> | 冯天龙 | |
 | <font style="color:black;">S&P</font> | 廖永智 | |
 | <font style="color:black;">CRYPTO</font> | 冯天龙 | |
-| <font style="color:black;">USENIX Security</font> | 廖永智 | |
+| <font style="color:black;">USENIX Security</font> | 廖永智 |共1856篇 |
 | <font style="color:black;">NDSS</font> | 廖永智 | 共1306篇 |
 | <font style="color:black;">ACSA</font> | 梁家杰 | |
 | <font style="color:black;">ASIACRYPT</font> | 冯天龙 | |
