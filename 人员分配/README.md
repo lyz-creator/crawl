@@ -1,6 +1,6 @@
 | **<font style="color:black;">Conference</font>** | **<font style="color:black;">人员分配</font>** | **<font style="color:black;">备注</font>** |
 | --- | --- | --- |
-| <font style="color:black;">CCS</font> | 廖永智 |Failed to download PDF. Status code: 403 从arxiv上爬取351篇 |
+| <font style="color:black;">CCS</font> | 廖永智 |Failed to download PDF. Status code: 403|
 | <font style="color:black;">EUROCRYPT</font> | 冯天龙 | 共1981篇 |
 | <font style="color:black;">S&P</font> | 廖永智 |共1268篇 |
 | <font style="color:black;">CRYPTO</font> | 冯天龙 | 共2165篇 |
