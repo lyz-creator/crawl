@@ -14,10 +14,10 @@
 | <font style="color:black;">SRDS</font> | 梁家杰 | |
 | <font style="color:black;">CHES</font> | 滕少西 | |
 | <font style="color:black;">DSN</font> | 滕少西 | |
-| <font style="color:black;">RAID</font> | 廖永智 | |
+| <font style="color:black;">RAID</font> | 廖永智 |共577篇 |
 | <font style="color:black;">PKC</font> | 滕少西 | |
 | <font style="color:black;">TCC</font> | 冯天龙 | 共994篇 |
-| <font style="color:black;">WiSec</font> | 廖永智 | |
+| <font style="color:black;">WiSec</font> | 廖永智 |共407篇 |
 | <font style="color:black;">SACMAT</font> | 滕少西 | |
 | <font style="color:black;">DRM</font> | 陈鸿林 | |
 | <font style="color:black;">IH&MSec</font> | 陈鸿林 | |
