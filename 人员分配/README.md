@@ -1,14 +1,14 @@
 | **<font style="color:black;">Conference</font>** | **<font style="color:black;">人员分配</font>** | **<font style="color:black;">备注</font>** |
 | --- | --- | --- |
 | <font style="color:black;">CCS</font> | 廖永智 |Failed to download PDF. Status code: 403 |
-| <font style="color:black;">EUROCRYPT</font> | 冯天龙 | |
+| <font style="color:black;">EUROCRYPT</font> | 冯天龙 | 共1981篇 |
 | <font style="color:black;">S&P</font> | 廖永智 |共1268篇 |
-| <font style="color:black;">CRYPTO</font> | 冯天龙 | |
+| <font style="color:black;">CRYPTO</font> | 冯天龙 | 共2165篇 |
 | <font style="color:black;">USENIX Security</font> | 廖永智 |共1856篇 |
 | <font style="color:black;">NDSS</font> | 廖永智 | 共1306篇 |
 | <font style="color:black;">ACSA</font> | 梁家杰 | |
-| <font style="color:black;">ASIACRYPT</font> | 冯天龙 | |
-| <font style="color:black;">ESORICS</font> | 冯天龙 | |
+| <font style="color:black;">ASIACRYPT</font> | 冯天龙 | 共1707篇 |
+| <font style="color:black;">ESORICS</font> | 冯天龙 | 共1514篇 |
 | <font style="color:black;">FSE</font> | 梁家杰 | |
 | <font style="color:black;">CSFW</font> | 梁家杰 | |
 | <font style="color:black;">SRDS</font> | 梁家杰 | |
@@ -16,7 +16,7 @@
 | <font style="color:black;">DSN</font> | 滕少西 | |
 | <font style="color:black;">RAID</font> | 廖永智 |共577篇 |
 | <font style="color:black;">PKC</font> | 滕少西 | |
-| <font style="color:black;">TCC</font> | 冯天龙 | 共994篇 |
+| <font style="color:black;">TCC</font> | 冯天龙 | 共995篇 |
 | <font style="color:black;">WiSec</font> | 廖永智 |共407篇 |
 | <font style="color:black;">SACMAT</font> | 滕少西 | |
 | <font style="color:black;">DRM</font> | 陈鸿林 | |
