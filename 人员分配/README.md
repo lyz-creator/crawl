@@ -31,8 +31,8 @@
 | <font style="color:black;">TrustCom</font> | 袁飞扬 | |
 | <font style="color:black;">SEC</font> | 袁飞扬 | |
 | <font style="color:black;">IFIP WG 11.9</font> | 袁飞扬 | |
-| <font style="color:black;">ISC</font> | 李信福 | |
-| <font style="color:black;">ICDF2C</font> | 李信福 | |
+| <font style="color:black;">ISC</font> | 李信福 | 共525p篇 |
+| <font style="color:black;">ICDF2C</font> | 李信福 | 共149 |
 | <font style="color:black;">ICICS</font> | 李信福 | |
 | <font style="color:black;">SecureComm</font> | 李信福 | |
 | <font style="color:black;">NSPW</font> | 赵帅 | |
