@@ -23,10 +23,10 @@
 | <font style="color:black;">IH&MSec</font> | 陈鸿林 | |
 | <font style="color:black;">ACNS</font> | 陈鸿林 | |
 | <font style="color:black;">AsiaCCS</font> | 陈鸿林 | |
-| <font style="color:black;">ACISP</font> | 张超 | 745|
-| <font style="color:black;">CT-RSA</font> | 张超 | 510|
-| <font style="color:black;">DIMVA</font> | 张超 | 292|
-| <font style="color:black;">DFRWS</font> | 张超 | 626|
+| <font style="color:black;">ACISP</font> | 张超 | 共745篇|
+| <font style="color:black;">CT-RSA</font> | 张超 | 共510篇|
+| <font style="color:black;">DIMVA</font> | 张超 | 共292篇|
+| <font style="color:black;">DFRWS</font> | 张超 | 共626篇|
 | <font style="color:black;">FC</font> | 袁飞扬 | |
 | <font style="color:black;">TrustCom</font> | 袁飞扬 | |
 | <font style="color:black;">SEC</font> | 袁飞扬 | |
