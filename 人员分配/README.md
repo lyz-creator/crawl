@@ -39,9 +39,9 @@
 | <font style="color:black;">PAM</font>             | 赵帅                                           | 共305篇                                    |
 | <font style="color:black;">PETS</font>            | 赵帅                                           |                                            |
 | <font style="color:black;">SAC</font>             | 赵帅                                           | 共417篇                                    |
-| <font style="color:black;">SOUPS</font>           | 周启瑞                                         |                                            |
-| <font style="color:black;">HotSec</font>          | 周启瑞                                         |                                            |
+| <font style="color:black;">SOUPS</font>           | 周启瑞                                         | 共309篇                                           |
+| <font style="color:black;">HotSec</font>          | 周启瑞                                         | 共79篇                                           |
 | <font style="color:black;">EuroS&P</font>         | 周启瑞                                         |                                            |
-| <font style="color:black;">Inscrypt</font>        | 周启瑞                                         |                                            |
+| <font style="color:black;">Inscrypt</font>        | 周启瑞                                         | 共448篇                                           |
 
 
