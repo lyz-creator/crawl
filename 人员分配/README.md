@@ -37,7 +37,7 @@
 | <font style="color:black;">SecureComm</font>      | 李信福                                         | 共481篇                                    |
 | <font style="color:black;">NSPW</font>            | 赵帅                                           | 共370篇                                    |
 | <font style="color:black;">PAM</font>             | 赵帅                                           | 共305篇                                    |
-| <font style="color:black;">PETS</font>            | 赵帅                                           |                                            |
+| <font style="color:black;">PETS</font>            | 赵帅                                           | Failed to download PDF.                                          |
 | <font style="color:black;">SAC</font>             | 赵帅                                           | 共417篇                                    |
 | <font style="color:black;">SOUPS</font>           | 周启瑞                                         | 共309篇                                           |
 | <font style="color:black;">HotSec</font>          | 周启瑞                                         | 共79篇                                           |
